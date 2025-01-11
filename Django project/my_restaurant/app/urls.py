@@ -33,4 +33,3 @@ urlpatterns = [
     path('passwordchangedone/', auth_view.PasswordChangeDoneView.as_view(template_name='app/passwordchangedone.html') , name='passwordchangedone'),
     path ('logout/', views.logout , name='logout'),
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.STATIC_ROOT)
